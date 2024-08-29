@@ -1,0 +1,23 @@
+:root {
+    --padding-page-horizontal: 80px
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #282424;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+@media (width < 500px) {
+    :root {
+        --padding-page-horizontal: 20px;
+    }   
+}

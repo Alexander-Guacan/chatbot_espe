@@ -1,0 +1,17 @@
+.navbar {
+    padding: 20px var(--padding-page-horizontal);
+    margin-bottom: 24px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: medium;
+}
