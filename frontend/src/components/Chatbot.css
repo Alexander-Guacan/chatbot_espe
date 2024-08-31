@@ -82,6 +82,6 @@
 
 @media (width < 500px) {
     .chat {
-        height: 60vh;
+        height: 80vh;
     }
 }
