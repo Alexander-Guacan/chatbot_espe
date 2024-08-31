@@ -1,15 +1,18 @@
 import './App.css'
-import { Chatbot } from './components/chatbot'
 import { NavBar } from './components/NavBar'
+import { Route, Routes } from 'react-router-dom'
+import { Home } from './pages/Home'
+import { AboutUs } from './pages/AboutUs'
 
 function App() {
 
   return (
     <>
       <NavBar />
-      <main className='main'>
-        <Chatbot />
-      </main>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about_us' element={<AboutUs />} />
+      </Routes>
     </>
   )
 }
