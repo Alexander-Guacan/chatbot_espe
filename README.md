@@ -6,7 +6,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 
 ```plaintext
 /backend
-|-- assets/
+├── assets/
 │   ├── bert/
 │   ├── flan/
 │   └── preguntas_respuestas.csv
