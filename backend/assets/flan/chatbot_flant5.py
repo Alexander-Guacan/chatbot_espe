@@ -1,8 +1,15 @@
 import faiss
 from sentence_transformers import SentenceTransformer
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+import os
+import deepl
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class ChatbotFlan:
+    deepl_api_key = os.getenv("DEEPL_API_KEY")
+    translator = deepl.Translator(deepl_api_key)
     sentence_transformers_name = 'paraphrase-MiniLM-L6-v2'
 
     def __init__(self, dataset, model_path, faiss_index_path) -> None:
@@ -32,4 +39,4 @@ class ChatbotFlan:
         output = self.model.generate(input_ids, max_new_tokens=128)
         answer = self.tokenizer.decode(output[0], skip_special_tokens=True)
         
-        return answer
+        return self.translator.translate_text(answer, target_lang='ES').text
