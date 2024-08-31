@@ -14,7 +14,7 @@ export const askToChatbot = async (question) => {
     },
     body: JSON.stringify(bodyRequest)
   }).then(response => response.json()).catch(() => {
-    return "No puedo responder a esa pregunta 😓"
+    return { answer: "No puedo responder a esa pregunta 😓" }
   })
 
   return answer
