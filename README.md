@@ -4,7 +4,28 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 
 ## Estructura del Proyecto
 
-/backend ├── server.py ├── requirements.txt /frontend ├── public/ ├── src/ ├── package.json
+/backend
+|-- assets/
+│   ├── bert/
+│   ├── flan/
+│   └── preguntas_respuestas.csv
+├── requirements.txt
+├── server.py
+└── .env
+
+/frontend
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.jsx
+│   └── index.jsx
+├── .env
+├── package.json
+└── README.md
 
 ## Requisitos Previos
 
