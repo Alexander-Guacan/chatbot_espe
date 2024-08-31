@@ -4,6 +4,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 
 ## Estructura del Proyecto
 
+```plaintext
 /backend
 |-- assets/
 │   ├── bert/
@@ -26,6 +27,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 ├── .env
 ├── package.json
 └── README.md
+```
 
 ## Requisitos Previos
 
@@ -60,7 +62,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 
 4. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
 
-    ```txt
+    ```plaintext
     DEEPL_API_KEY=tu_api_key_deepl
     ```
 
@@ -86,7 +88,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 
 3. Crea un archivo .env en la carpeta frontend con la dirección del backend:
 
-    ```txt
+    ```plaintext
     VITE_API_ADDRESS=http://localhost:8000  # Ajusta la URL si tu backend está en otra dirección
     ```
 
