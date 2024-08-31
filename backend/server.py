@@ -20,7 +20,7 @@ chatbotFlan = ChatbotFlan(dataset=dataset, model_path='./assets/flan/flan-t5-fin
                           faiss_index_path='./assets/flan/faiss_index_flan.bin')
 
 def is_complex_question(question):
-    is_too_long = len(question.split()) > 20
+    is_too_long = len(question.split()) > 10
     doc = nlp(question)
     has_clauses = any(token.dep_ in {'advcl', 'ccomp', 'xcomp'} for token in doc)
     
