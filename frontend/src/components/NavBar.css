@@ -1,14 +1,15 @@
 .navbar {
-    padding: 20px var(--padding-page-horizontal);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 24px;
+    padding: 20px var(--padding-page-horizontal);
     background-color: #1a1a1a;
-    text-align: center;
 }
 
 .menu {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
+    text-align: right;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
