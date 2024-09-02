@@ -113,7 +113,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
 4. Inicia la aplicación React:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Uso
