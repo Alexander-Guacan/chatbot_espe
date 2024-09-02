@@ -54,25 +54,37 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
     chatbot_env/Scripts/activate
     ```
 
-3. Instala las dependencias:
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4. La libreria de torch debe ser instalada de forma manual
+3. Instala torch manualmente
 
     ```bash
     pip install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
     ```
 
-5. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
+4. Instala las dependencias faltantes:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. [Descarga](https://drive.google.com/file/d/1-9KvZ7fpScM63DiKiQcGAv-dWsV6voxl/view?usp=sharing) el modelo fine-tuning y extraelo en la siguiente ruta
+
+    ```bash
+    /chatbot_espe/backend/assets/flan/
+    ```
+
+5. Descarga el modelo spaCy
+
+    ```bash
+    python -m spacy download es_core_news_sm
+    ```
+
+6. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
 
     ```plaintext
     DEEPL_API_KEY=tu_api_key_deepl
     ```
 
-6. Ejecuta el servidor Flask:
+7. Ejecuta el servidor Flask:
 
     ```bash
     python server.py
