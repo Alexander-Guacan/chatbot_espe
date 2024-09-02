@@ -60,13 +60,19 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
     pip install -r requirements.txt
     ```
 
-4. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
+4. La libreria de torch debe ser instalada de forma manual
+
+    ```bash
+    pip install torch==2.3.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+    ```
+
+5. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
 
     ```plaintext
     DEEPL_API_KEY=tu_api_key_deepl
     ```
 
-5. Ejecuta el servidor Flask:
+6. Ejecuta el servidor Flask:
 
     ```bash
     python server.py
