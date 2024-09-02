@@ -66,7 +66,7 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
     pip install -r requirements.txt
     ```
 
-5. [Descarga](https://drive.google.com/file/d/1-9KvZ7fpScM63DiKiQcGAv-dWsV6voxl/view?usp=sharing) el modelo fine-tuning y extraelo en la siguiente ruta
+5. [Descarga](https://drive.google.com/file/d/1-9KvZ7fpScM63DiKiQcGAv-dWsV6voxl/view?usp=drive_link) el modelo fine-tuning y extraelo en la siguiente ruta
 
     ```bash
     /chatbot_espe/backend/assets/flan/
