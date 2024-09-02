@@ -72,19 +72,19 @@ Este proyecto es un chatbot especializado para responder preguntas frecuentes so
     /chatbot_espe/backend/assets/flan/
     ```
 
-5. Descarga el modelo spaCy
+6. Descarga el modelo spaCy
 
     ```bash
     python -m spacy download es_core_news_sm
     ```
 
-6. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
+7. Crea un archivo .env en la carpeta backend con la API Key de DeepL:
 
     ```plaintext
     DEEPL_API_KEY=tu_api_key_deepl
     ```
 
-7. Ejecuta el servidor Flask:
+8. Ejecuta el servidor Flask:
 
     ```bash
     python server.py
